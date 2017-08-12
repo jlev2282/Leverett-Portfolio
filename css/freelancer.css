@@ -520,3 +520,11 @@ div#maincontent {
   width: 100px;
   height: 100px;
 }
+
+.img-circular{
+ width: 200px;
+ height: 200px;
+ background-image: url('img/UNCC.4.21-9.JPG');
+ background-size: cover;
+ display: block;
+}
