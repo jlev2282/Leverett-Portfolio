@@ -514,3 +514,9 @@ fieldset[disabled] .btn-success.active {
 div#maincontent {
   outline: none;
 }
+
+#my pic {
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+}
