@@ -1,0 +1,20 @@
+git respository pages
+https://jlev2282.github.io/Flashcard-generator/
+- not completed
+
+https://jlev2282.github.io/Bamazon/
+- must be ran through console
+
+https://jlev2282.github.io/FriendFinder/
+- requires heroku
+
+https://github.com/jlev2282/EatDaBurger
+- requires heroku 
+-mongo
+
+https://github.com/jlev2282/SequelizedBurger
+- requires heroku
+-Sequelized
+
+https://warm-tundra-56125.herokuapp.com/
+- already tied to heroku
