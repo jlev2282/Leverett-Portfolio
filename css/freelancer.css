@@ -529,3 +529,7 @@ div#maincontent {
  display: block;
  border-radius: 5%;
 }
+
+ul #languages li {
+    width: 10px;
+}
