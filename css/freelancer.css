@@ -527,4 +527,5 @@ div#maincontent {
  background-image: url('../img/UNCC.4.21-9.JPG');
  background-size: cover;
  display: block;
+ border-radius: 5px;
 }
