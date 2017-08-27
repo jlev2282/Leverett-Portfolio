@@ -533,3 +533,7 @@ div#maincontent {
 ul #languages li {
   display: inline;
 }
+
+ul {
+  list-style: none;
+}
