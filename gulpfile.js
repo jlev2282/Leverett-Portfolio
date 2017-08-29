@@ -94,11 +94,11 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
     gulp.watch('js/**/*.js', browserSync.reload);
 });
 
-// test code to try to deploy to Heroku
-gulp.task('serveprod', function() {
-  connect.server({
-    root: [index.html],
-    port: process.env.PORT || 5000, // localhost:5000
-    livereload: false
-  });
-});
+// // test code to try to deploy to Heroku
+// gulp.task('serveprod', function() {
+//   connect.server({
+//     root: [index.html],
+//     port: process.env.PORT || 5000, // localhost:5000
+//     livereload: false
+//   });
+// });
