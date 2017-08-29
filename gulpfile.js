@@ -97,7 +97,7 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
 // test code to try to deploy to Heroku
 gulp.task('serveprod', function() {
   connect.server({
-    root: ['https://leverett-portfolio.herokuapp.com'],
+    root: ['/index.html'],
     port: process.env.PORT || 5000, // localhost:5000
     livereload: false
   });
