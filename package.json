@@ -1,7 +1,4 @@
 {
-  // "scripts": {
-  //   "start": "gulp && node dist/server.js"
-  // },
   "name": "freelancer",
   "title": "Freelancer",
   "version": "3.3.7+1",
