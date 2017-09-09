@@ -106,9 +106,9 @@ gulp.task('connect', function() {
   console.log("App running on port 2207");
 });
 
-gulp.task("heroku:production", function(){
-    console.log('hello'); // the task does not need to do anything.
-});
+// gulp.task("heroku:production", function(){
+//     console.log('hello'); // the task does not need to do anything.
+// });
 // var port = process.env.PORT || 8000
 // server.listen(port, function() {
 //     console.log("App is running on port " + port);
