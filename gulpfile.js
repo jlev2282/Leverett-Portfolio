@@ -73,7 +73,8 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'serveprod']);
+// gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'serveprod']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -95,10 +96,16 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
 });
 
 // // test code to try to deploy to Heroku
-gulp.task('serveprod', function() {
-  connect.server({
-    root: [index.html],
-    port: process.env.PORT || 2207, // localhost:2207
-    livereload: false
-  });
-});
+// gulp.task('serveprod', function() {
+//   connect.server({
+//     root: [index.html],
+//     port: process.env.PORT || 2207, // localhost:2207
+//     livereload: false
+//   });
+// });
+
+var port = process.env.PORT || 8000
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+ });
+
