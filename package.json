@@ -9,9 +9,9 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
   "scripts": {
-  "start": "node gulpfile.js",
-  "postinstall": "gulp default"
-},
+    "start": "node gulpfile.js",
+    "postinstall": "gulp default"
+  },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
@@ -22,7 +22,8 @@
     "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
-    "jquery": "^1.11.3"
+    "jquery": "^1.11.3",
+    "gulp-connect": "^5.0.0"
   },
   "devDependencies": {
     "gulp-clean-css": "^2.0.10"
@@ -32,5 +33,3 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
   }
 }
-
-

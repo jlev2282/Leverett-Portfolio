@@ -3,10 +3,11 @@ var less = require('gulp-less');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
+var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var filter = require('gulp-filter');
 var pkg = require('./package.json');
+var serveprod = require('gulp-connect');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -74,7 +75,7 @@ gulp.task('copy', function() {
 
 // Run everything
 // gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'serveprod']);
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'serveprod']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -86,7 +87,7 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js','serveprod'], function() {
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
@@ -102,6 +103,7 @@ gulp.task('serveprod', function() {
     port: process.env.PORT || 2207, // localhost:2207
     livereload: false
   });
+  console.log("App running on port 2207");
 });
 
 // var port = process.env.PORT || 8000
