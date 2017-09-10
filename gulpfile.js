@@ -87,7 +87,7 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js','connect'], function() {
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
@@ -97,18 +97,18 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js','connect'], f
 });
 
 // // test code to try to deploy to Heroku
-gulp.task('connect', function() {
-  connect.server({
-    root: 'index.html',
-    port: process.env.PORT || 2207, // localhost:2207
-    livereload: false
-  });
-  console.log("App running on port 2207");
-});
-
-// gulp.task("heroku:production", function(){
-//     console.log('hello'); // the task does not need to do anything.
+// gulp.task('connect', function() {
+//   connect.server({
+//     root: 'index.html',
+//     port: process.env.PORT || 2207, // localhost:2207
+//     livereload: false
+//   });
+//   console.log("App running on port 2207");
 // });
+
+gulp.task("heroku:production", function(){
+    console.log('hello'); // the task does not need to do anything.
+});
 // var port = process.env.PORT || 8000
 // server.listen(port, function() {
 //     console.log("App is running on port " + port);
