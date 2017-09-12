@@ -9,7 +9,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
   "scripts":{
-    "start":"index.html",  
+    "start":"index.html"  
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
