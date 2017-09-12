@@ -1,2 +1,0 @@
-web: node index.html
-
